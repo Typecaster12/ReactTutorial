@@ -9,7 +9,7 @@ export function Profile() {
       <ProfileCard
         //props
         name="Harsh"
-        age={21}
+        age={21}  //in react number can be passed like this only;
         greeting={
 
           //we can pass JSX inside props also like this;
