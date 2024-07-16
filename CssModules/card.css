@@ -1,0 +1,28 @@
+.card{
+    border: 1px solid rgb(53, 53, 247);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card h2{
+    padding: 12px;
+}
+
+.card h3{
+    padding: 12px;
+}
+
+.card p{
+    padding: 12px;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

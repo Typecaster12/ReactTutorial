@@ -1,0 +1,50 @@
+.card1{
+    background-color: rgb(172, 166, 166);
+    border: 1px solid rgb(53, 53, 247);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card2{
+    background-color: rgb(172, 166, 166);
+    border: 1px solid rgb(53, 53, 247);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn{
+    padding: 12px 24px;
+    border: none;
+    color: royalblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid white;
+}
+
+.main{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .para{
+    padding: 12px;
+}
+
+.movieHeading{
+    padding: 12px;
+}
+
+.ratings{
+    padding: 12px;
+} */
