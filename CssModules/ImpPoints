@@ -1,0 +1,4 @@
+CssModules automatically creates unique classNames to avoid name clashings;
+className which containes (-) can crerate isseue while accessing them, So the correct way to access them is => 
+{styles.["main-heading"]} like this; 
+The good practise is that we should create cssmodules for our each perticular files;
