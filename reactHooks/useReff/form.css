@@ -1,0 +1,20 @@
+input{
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(160, 179, 239);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none;
+    background-color: royalblue;
+    color: white;
+}
