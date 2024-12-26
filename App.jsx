@@ -1,58 +1,42 @@
-//react fragments
-// import { Fragment } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import AppLayout from "./AppLayout/AppLayout";
 
-export const Cards = () => {
-  return (
-    // <div> '{/*this div is extra and had to remove this we use fragments*/}'
-    //   {/*this is the method to call/use this components
-    //  this compo can be call multiple times; */}
-    //   <TheComponent />
-    //   <TheComponent />
-    //   <TheComponent />
-    //   <TheComponent />
-    // </div>
+const App = () => {
 
-    // <Fragment>
-    //   <TheComponent />
-    //   <TheComponent />  {/*Now we can call multiple elements without any parent div*/}
-    //   <TheComponent />
-    //   <TheComponent />
-    // </Fragment>
+  const router = createBrowserRouter([
 
-    //Also written like this;
-    //for this method import { Fragment } from "react"; is not required;
-    <>
-      <TheComponent />
-      <TheComponent />
-      <TheComponent />
-      <TheComponent />
-      <TheComponent />
-      <TheComponent />
-    </>
-  );
-};
+    //defining the layout of the app;
+    //in this layout <AppLayout /> is the parent component
+    //and <Home />, <About />, <Contact /> are the child components
+    //means <Home />, <About />, <Contact /> will be rendered inside <AppLayout />
 
-//the component function;
-const TheComponent = () => {
-  return (
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/about",
+          element: <About />
+        },
+        {
+          path: "/contact",
+          element: <Contact />
+        }
+      ]
+    }
 
-    //as jsx returns only one element so always wrap the elements inside single parent element;
-    <div>
-
-      <div>
-        <img src="public/img.jpg" alt="" height="40%" width="40%" />
-      </div>
-
-      <h2>IronMan The Dead Hero!</h2>
-      <h3>Ratings: 9.9</h3>
-      <p>Reviews: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit possimus nihil quo animi facilis quis dolore nisi nam placeat aut.</p>
-
-    </div>
-  );
-};
+  ]);
 
 
+  return <RouterProvider router={router} />;
 
+}
 
-
-
+export default App;
